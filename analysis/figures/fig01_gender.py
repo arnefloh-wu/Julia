@@ -38,7 +38,7 @@ mpl.rcParams.update({
 
 fig, ax = plt.subplots(figsize=(6.5, 4.5))
 x = range(len(cats))
-bars = ax.bar(x, counts, width=0.62, color='#666666',
+bars = ax.bar(x, counts, width=0.62, color='white',
               edgecolor='black', linewidth=0.8, zorder=3)
 
 # axes: tick labels + scale only, NO axis titles
