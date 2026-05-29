@@ -134,6 +134,37 @@ body(
     'capital allocation.'
 )
 
+# ── EI by participant gender ──
+doc.add_heading('Emotional Intelligence by Participant Gender', level=2)
+body(
+    'Because emotional intelligence is the central individual-difference variable '
+    'in this study, gender differences in the WLEIS were examined before '
+    'interpreting the substantive results. Female participants (n = 100) reported '
+    'significantly higher total emotional intelligence than male participants '
+    '(n = 84), M = 5.32 (SD = 0.77) versus M = 4.97 (SD = 0.71), Welch '
+    't(182) = 3.19, p = .002, d = 0.47. The difference was concentrated in the two '
+    'appraisal dimensions: self-emotion appraisal (SEA), M = 5.46 vs. 4.83, '
+    'p < .001, d = 0.59, and others’ emotion appraisal (OEA), M = 5.74 vs. 5.05, '
+    'p < .001, d = 0.66. The use of emotion (UOE; p = .206) and regulation of '
+    'emotion (ROE; p = .462) dimensions did not differ by gender.'
+)
+body(
+    'The effect was robust to demographic controls. Regressing each WLEIS score on '
+    'participant gender while adjusting for age and field of study (STEM vs. '
+    'non-STEM) left the gender difference unchanged for total EI (b = 0.36, '
+    'p = .002), SEA (b = 0.65, p < .001), and OEA (b = 0.66, p < .001). The '
+    'samples were well matched on age (M = 23.6 vs. 23.3 years) and comparable in '
+    'STEM enrolment (13% vs. 23%), so the difference reflects gender rather than '
+    'these covariates. This pattern is consistent with the broader '
+    'emotional-intelligence literature, in which women score higher on perceiving '
+    'and appraising emotions while regulation and instrumental-use differences are '
+    'small or absent. Methodologically, because emotional intelligence is '
+    'correlated with participant gender, tests of whether its moderating role '
+    'differs between male and female participants operate on a restricted EI range '
+    'within each gender and are correspondingly less sensitive — a limitation '
+    'noted where relevant.'
+)
+
 OUT = os.path.join(HERE, '22_storyline_draft.docx')
 doc.save(OUT)
 print('Saved', OUT)
