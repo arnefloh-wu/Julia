@@ -5,6 +5,9 @@ Output: analysis/32_detailed_review.docx
 import os
 from docx import Document
 from docx.shared import Pt, Inches
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+
+FIG = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'figures')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 doc = Document()
@@ -21,6 +24,16 @@ def body(t):
 
 def H1(t): return doc.add_heading(t, level=1)
 def H2(t): return doc.add_heading(t, level=2)
+
+def figure(num, title, fname, note, width=5.8):
+    cap = doc.add_paragraph(); cap.paragraph_format.space_before = Pt(8)
+    r = cap.add_run(num); r.bold = True
+    cap.add_run('  '); r = cap.add_run(title); r.italic = True
+    img = doc.add_paragraph(); img.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    img.add_run().add_picture(os.path.join(FIG, fname), width=Inches(width))
+    np = doc.add_paragraph(); nr = np.add_run('Note. '); nr.italic = True
+    np.add_run(note); np.paragraph_format.space_after = Pt(10)
+    for r in np.runs: r.font.size = Pt(10)
 
 def tbl(headers, rows, fs=10):
     t = doc.add_table(rows=1, cols=len(headers)); t.style = 'Light List Accent 1'
@@ -152,6 +165,10 @@ body(
     'participant gender, any test of whether EI\'s moderating role differs between '
     'male and female participants necessarily operates on a restricted EI range '
     'within each gender and is correspondingly less sensitive.')
+figure('Figure 1', 'Emotional Intelligence by Participant Gender',
+       'fig22_ei_by_gender.png',
+       'WLEIS means (±1 SE) for male and female participants. '
+       '* p < .05, ** p < .01, *** p < .001; ns = not significant.')
 
 # ─────────────────────────── 5 ───────────────────────────
 H1('5. Hypothesis Tests')
@@ -294,6 +311,11 @@ body(
     'proximal driver. A complementary within-industry analysis confirmed that there '
     'was no female penalty inside either industry once the venture itself was held '
     'constant.')
+figure('Figure 2', 'Investment by Founder Gender and Industry Typing',
+       'fig16_incongruent_penalty.png',
+       'Mean amount invested (±1 SE). Cell A = female founders in the male-typed '
+       'industry (SiteVision); Cell B = male founders in the female-typed industry '
+       '(BalanceUp).')
 
 H2('6.3  Result 3 — The Low-EI Masculine-Congruent Preference')
 body(
@@ -308,6 +330,10 @@ body(
     'emotional self-regulation. This result is the empirical anchor for the thesis\'s '
     'claim that EI conditions the expression of gender-congruity bias, although, as '
     'set out below, it is statistically the most fragile of the three.')
+figure('Figure 3', 'Low-EI Participants: Masculine- versus Feminine-Congruent Investment',
+       'fig14_lowEI_congruence.png',
+       'Mean amount invested (±1 SE) among participants below the median on total '
+       'WLEIS. The bracket reports the one-tailed test.', width=4.8)
 
 H2('6.4  The Absence of a Raw Gender Funding Gap')
 body(
@@ -363,6 +389,16 @@ body(
     '(the Dohmen general and financial items) did not threaten any result; if '
     'anything the congruity and low-EI effects strengthened when risk traits alone '
     'were controlled (p = .007 and p = .038 respectively).')
+figure('Figure 4', 'Adjusted Effect Coefficients Across Robustness Specifications',
+       'fig21_robustness_coefficients.png',
+       'Effect coefficient (0–3 scale) for each result under successive covariate '
+       'adjustments. * p < .05. Note how adding perceived success collapses all '
+       'three effects.')
+figure('Figure 5', 'Perceived-Success Mechanism',
+       'fig23_success_mechanism.png',
+       'Within-person investment gap (SiteVision − BalanceUp) plotted against the '
+       'perceived-success gap, with linear fit. Points jittered for legibility.',
+       width=5.2)
 
 H2('7.2  Sensitivity to Presentation Order')
 body(
@@ -385,6 +421,11 @@ body(
     'order was balanced across conditions; but their generalisability is limited, '
     'because they are not stable across presentation orders. This order dependence '
     'should be disclosed transparently as a boundary condition.')
+figure('Figure 6', 'Effect Size by Pitch Presentation Order',
+       'fig20_pitch_order_interaction.png',
+       'Mean investment difference (0–3 scale) underlying each result, split by '
+       'whether SiteVision or BalanceUp was presented first. All three effects are '
+       'present only when SiteVision is shown first.')
 
 H2('7.3  Attention Filter and Subgroup Stability')
 body(
