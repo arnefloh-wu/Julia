@@ -1,124 +1,124 @@
-# Stichprobenbeschreibung (N = 187)
+# Sample Description (N = 187)
 
-## Geschlecht (Q16)
-gültig n = 187
+## Gender (Q16)
+valid n = 187
 
-| Kategorie | n | % (gültig) |
+| Category | n | % (valid) |
 |---|---:|---:|
-| Weiblich | 100 | 53.5 |
-| Männlich | 84 | 44.9 |
-| Nicht-binär | 2 | 1.1 |
-| Keine Angabe | 1 | 0.5 |
+| Female | 100 | 53.5 |
+| Male | 84 | 44.9 |
+| Non-binary | 2 | 1.1 |
+| Prefer not to say | 1 | 0.5 |
 
-## Alter (Q17)
-numerisch auswertbar n = 186 (1 Angabe "Ü40" nur als Gruppe 40+ gewertet)
+## Age (Q17)
+numeric n = 186 (1 response "over 40" counted only in the 40+ group)
 
 - **M = 23.4**, SD = 4.8, Median = 22, Min = 17, Max = 57
 
-| Altersgruppe | n | % |
+| Age group | n | % |
 |---|---:|---:|
 | <20 | 22 | 11.8 |
-| 20–24 | 105 | 56.1 |
-| 25–29 | 50 | 26.7 |
-| 30–39 | 7 | 3.7 |
+| 20-24 | 105 | 56.1 |
+| 25-29 | 50 | 26.7 |
+| 30-39 | 7 | 3.7 |
 | 40+ | 3 | 1.6 |
 
-## Nationalität (Q18, normalisiert)
-gültig n = 187
+## Nationality (Q18, normalized)
+valid n = 187
 
-| Nationalität | n | % |
+| Nationality | n | % |
 |---|---:|---:|
-| Deutsch | 68 | 36.4 |
-| Österreichisch | 50 | 26.7 |
-| Ukrainisch | 10 | 5.3 |
-| Bulgarisch | 9 | 4.8 |
-| Russisch | 8 | 4.3 |
-| Ungarisch | 5 | 2.7 |
-| Slowakisch | 4 | 2.1 |
-| Italienisch | 4 | 2.1 |
-| Rumänisch | 3 | 1.6 |
-| Polnisch | 2 | 1.1 |
-| Indisch | 2 | 1.1 |
-| Türkisch | 2 | 1.1 |
-| Guatemaltekisch | 2 | 1.1 |
-| Deutsch & Niederländisch | 1 | 0.5 |
-| Tschetschenisch | 1 | 0.5 |
-| Bosnisch | 1 | 0.5 |
-| Österreichisch & Kroatisch | 1 | 0.5 |
-| Serbisch | 1 | 0.5 |
-| Schwedisch | 1 | 0.5 |
-| Lettisch | 1 | 0.5 |
-| US-amerikanisch | 1 | 0.5 |
-| Luxemburgisch | 1 | 0.5 |
-| Kolumbianisch | 1 | 0.5 |
-| Albanisch | 1 | 0.5 |
-| Portugiesisch | 1 | 0.5 |
-| Schweizerisch | 1 | 0.5 |
-| Kasachisch | 1 | 0.5 |
-| Österreichisch & Niederländisch | 1 | 0.5 |
-| Kroatisch | 1 | 0.5 |
-| Bulgarisch & Türkisch | 1 | 0.5 |
-| Ungarisch & Deutsch | 1 | 0.5 |
+| German | 68 | 36.4 |
+| Austrian | 50 | 26.7 |
+| Ukrainian | 10 | 5.3 |
+| Bulgarian | 9 | 4.8 |
+| Russian | 8 | 4.3 |
+| Hungarian | 5 | 2.7 |
+| Slovak | 4 | 2.1 |
+| Italian | 4 | 2.1 |
+| Romanian | 3 | 1.6 |
+| Polish | 2 | 1.1 |
+| Indian | 2 | 1.1 |
+| Turkish | 2 | 1.1 |
+| Guatemalan | 2 | 1.1 |
+| German & Dutch | 1 | 0.5 |
+| Chechen | 1 | 0.5 |
+| Bosnian | 1 | 0.5 |
+| Austrian & Croatian | 1 | 0.5 |
+| Serbian | 1 | 0.5 |
+| Swedish | 1 | 0.5 |
+| Latvian | 1 | 0.5 |
+| American | 1 | 0.5 |
+| Luxembourgish | 1 | 0.5 |
+| Colombian | 1 | 0.5 |
+| Albanian | 1 | 0.5 |
+| Portuguese | 1 | 0.5 |
+| Swiss | 1 | 0.5 |
+| Kazakh | 1 | 0.5 |
+| Austrian & Dutch | 1 | 0.5 |
+| Croatian | 1 | 0.5 |
+| Bulgarian & Turkish | 1 | 0.5 |
+| Hungarian & German | 1 | 0.5 |
 
-## Höchster abgeschlossener Bildungsabschluss (Q19)
-gültig n = 179 (fehlend = 8)
+## Highest Completed Education (Q19)
+valid n = 179 (missing = 8)
 
-| Kategorie | n | % (gültig) |
+| Category | n | % (valid) |
 |---|---:|---:|
-| Matura / Abitur / Hochschulreife | 104 | 58.1 |
-| Bachelor | 61 | 34.1 |
-| Master | 13 | 7.3 |
-| Lehre / Berufsausbildung | 1 | 0.6 |
+| Higher ed. entrance qual. (Matura/Abitur) | 104 | 58.1 |
+| Bachelor's degree | 61 | 34.1 |
+| Master's degree | 13 | 7.3 |
+| Vocational training | 1 | 0.6 |
 
-## Aktuell angestrebter Abschluss (Q20)
-gültig n = 179 (fehlend = 8)
+## Degree Currently Pursued (Q20)
+valid n = 179 (missing = 8)
 
-| Kategorie | n | % (gültig) |
+| Category | n | % (valid) |
 |---|---:|---:|
-| Bachelor | 107 | 59.8 |
-| Master | 49 | 27.4 |
-| PhD / Doktorat | 2 | 1.1 |
-| Sonstige Ausbildung | 3 | 1.7 |
-| Ich strebe derzeit keinen Abschluss an | 18 | 10.1 |
+| Bachelor's | 107 | 59.8 |
+| Master's | 49 | 27.4 |
+| PhD / Doctorate | 2 | 1.1 |
+| Other education | 3 | 1.7 |
+| Not currently pursuing a degree | 18 | 10.1 |
 
-## Studienfach (Q21)
-gültig n = 187
+## Field of Study (Q21)
+valid n = 187
 
-| Kategorie | n | % (gültig) |
+| Category | n | % (valid) |
 |---|---:|---:|
-| Betriebswirtschaft/Management | 74 | 39.6 |
-| Sonstige | 19 | 10.2 |
-| Volkswirtschaft | 18 | 9.6 |
-| Sozial- und Geisteswissenschaften | 16 | 8.6 |
-| Wirtschaftsrecht | 12 | 6.4 |
-| Ich studiere derzeit nicht | 12 | 6.4 |
-| Naturwissenschaften | 11 | 5.9 |
-| Wirtschaftsinformatik | 9 | 4.8 |
-| Ingenieurwesen / Technische Wissenschaften | 9 | 4.8 |
-| Finanzwirtschaft | 4 | 2.1 |
-| Informatik | 3 | 1.6 |
+| Business Administration/Management | 74 | 39.6 |
+| Other | 19 | 10.2 |
+| Economics | 18 | 9.6 |
+| Social Sciences & Humanities | 16 | 8.6 |
+| Business Law | 12 | 6.4 |
+| Not currently studying | 12 | 6.4 |
+| Natural Sciences | 11 | 5.9 |
+| Business Informatics | 9 | 4.8 |
+| Engineering / Technical Sciences | 9 | 4.8 |
+| Finance | 4 | 2.1 |
+| Computer Science | 3 | 1.6 |
 
-## Studium an der WU Wien (Q22)
-gültig n = 179 (fehlend = 8)
+## Enrolled at WU Vienna (Q22)
+valid n = 179 (missing = 8)
 
-| Kategorie | n | % (gültig) |
+| Category | n | % (valid) |
 |---|---:|---:|
-| Ja | 109 | 60.9 |
-| Nein | 70 | 39.1 |
+| Yes | 109 | 60.9 |
+| No | 70 | 39.1 |
 
-## Erfahrung mit Finanzinvestitionen (Q23)
-gültig n = 187
+## Experience with Financial Investments (Q23)
+valid n = 187
 
-| Kategorie | n | % (gültig) |
+| Category | n | % (valid) |
 |---|---:|---:|
-| Ja | 113 | 60.4 |
-| Nein | 74 | 39.6 |
+| Yes | 113 | 60.4 |
+| No | 74 | 39.6 |
 
-## Gründungserfahrung (Q24)
-gültig n = 187
+## Entrepreneurial Experience (Q24)
+valid n = 187
 
-| Kategorie | n | % (gültig) |
+| Category | n | % (valid) |
 |---|---:|---:|
-| Ja | 22 | 11.8 |
-| Nein | 165 | 88.2 |
+| Yes | 22 | 11.8 |
+| No | 165 | 88.2 |
 
