@@ -41,7 +41,8 @@ x = range(len(cats))
 bars = ax.bar(x, counts, width=0.62, color='white',
               edgecolor='black', linewidth=0.8, zorder=3)
 
-# axes: tick labels + scale only, NO axis titles
+# axes: y-axis title + tick labels + scale (no x-axis title)
+ax.set_ylabel('Frequency', labelpad=8)
 ax.set_xticks(list(x))
 ax.set_xticklabels(cats)
 ax.set_ylim(0, 110)
