@@ -536,6 +536,94 @@ body(
     'sensitivity that must be reported, rather than a clean demonstration of EI as '
     'a debiasing resource.')
 
+# ─────────────────────────── 11 ───────────────────────────
+H1('11. Integrating the Literature Review with the Findings')
+body(
+    'This closing chapter draws the theoretical framework of the literature review '
+    'and the empirical findings into a single, coherent account. The aim is to show '
+    'where the data substantiate the theory, where they redirect it, and how the '
+    'overall argument of the thesis should be positioned in light of both.')
+
+H2('11.1  From the Gender Funding Gap to Industry Congruity')
+body(
+    'The literature review opens from the premise of a systematic gender funding '
+    'gap, attributing it to investor biases rather than to differences in venture '
+    'quality. The present data refine this starting point rather than confirm it. '
+    'No gap emerged when founder gender was considered in isolation; instead, the '
+    'organising variable was the gender-typing of the industry, with the male-typed '
+    'venture systematically favoured (Result 1) and the congruity advantage '
+    'following from it (Result 2). This is precisely the boundary condition the '
+    'review attributes to Tonoyan and Strohmeyer (2021) and to the lack-of-fit and '
+    'role-congruity traditions: bias is not a uniform main effect but is '
+    'concentrated where the gender-typing of the role or industry is salient. The '
+    'thesis can therefore retain the review\'s theoretical scaffolding while '
+    'reframing its empirical claim from "a gender funding gap" to "a gender-by-'
+    'industry congruity effect."')
+
+H2('11.2  Stereotype Content, Warmth, and the Shift to Perceived Viability')
+body(
+    'The review develops the Stereotype Content Model and the BIAS-map argument of '
+    'Cuddy, Fiske and Glick (2007), proposing that female founders elicit a warmth '
+    'deficit and that warmth-linked emotions mediate discriminatory behaviour; this '
+    'is the theoretical engine behind H9. The data do not bear this out: female-'
+    'founded teams were rated no lower on warmth, and warmth did not mediate '
+    'investment. What did consistently account for the effects was perceived '
+    'probability of success, which correlated strongly with the investment gap and '
+    'attenuated every result when controlled. Read through the Stereotype Content '
+    'Model, this points away from the warmth dimension and toward the competence '
+    'dimension and its behavioural correlate of perceived viability. The review can '
+    'preserve the SCM framing but should pivot its emphasis from warmth-based '
+    'antipathy to competence- and viability-based judgment, treating warmth '
+    'mediation as an exploratory rather than central claim.')
+
+H2('11.3  Emotional Intelligence as a Conditional, Diffuse Moderator')
+body(
+    'The review\'s central contribution is the proposition that emotional '
+    'intelligence acts as a debiasing mechanism, with a specific theoretical bet on '
+    'self-emotion appraisal as the operative dimension, grounded in Yip and Cote '
+    '(2013) and the appraisal-misattribution account. The findings offer only '
+    'qualified support. Emotional intelligence did not moderate a gender funding '
+    'gap, because there was none to moderate, and it did not operate through '
+    'self-emotion appraisal: the SEA interaction was null and wrong-signed, and no '
+    'single WLEIS dimension carried the effect. The one EI-linked result — the '
+    'tendency of lower-EI participants to favour the masculine-congruent venture '
+    '(Result 3) — was diffuse across the total score and statistically fragile. The '
+    'review should therefore present emotional intelligence as a conditional and '
+    'diffuse moderator of congruity-based judgment rather than as a dimension-'
+    'specific debiasing mechanism, and should soften the self-emotion-appraisal '
+    'subsection from a claim to a candidate hypothesis.')
+
+H2('11.4  Risk, Emotion, and the Role of Perceived Success')
+body(
+    'The review devotes substantial attention to risk perception and to the '
+    'affective shaping of financial judgment, citing Dohmen et al. (2011) on '
+    'dispositional risk and Lerner and Keltner and Yip and Cote on emotion and '
+    'risk. The data align with this literature in an instructive way. Dispositional '
+    'risk tolerance, measured with the Dohmen items, did not confound any result, '
+    'and perceived startup risk played only a secondary role. The dominant '
+    'affective-cognitive variable was instead perceived success, which behaved as '
+    'the proximal driver of allocation. This positions perceived viability, rather '
+    'than risk per se, as the channel through which gender-typed expectations '
+    'translate into investment — a refinement the review can incorporate by '
+    'connecting its risk-perception section to a success- or viability-perception '
+    'mechanism.')
+
+H2('11.5  A Coherent Narrative for the Thesis')
+body(
+    'Brought together, the literature review and the findings support a single, '
+    'defensible narrative. Gender bias in startup funding, in this sample, is not a '
+    'blunt gap against female founders but a congruity effect organised around '
+    'industry gender-typing, expressed primarily through perceptions of venture '
+    'viability, weakly and diffusely conditioned by emotional intelligence, and '
+    'bounded by a sensitivity to presentation order that limits generalisability. '
+    'This narrative keeps the review\'s theoretical foundations — role congruity, '
+    'the Stereotype Content Model, and emotional intelligence as an individual-'
+    'difference moderator — while honestly redirecting each in light of the '
+    'evidence: from gap to congruity, from warmth to viability, and from a '
+    'SEA-specific mechanism to a conditional, diffuse one. Presented this way, the '
+    'thesis contributes a nuanced, empirically grounded qualification of the '
+    'investor-bias literature rather than a simple confirmation of it.')
+
 OUT = os.path.join(HERE, '32_detailed_review.docx')
 doc.save(OUT)
 print('Saved', OUT)
