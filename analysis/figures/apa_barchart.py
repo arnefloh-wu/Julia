@@ -73,6 +73,47 @@ def bar_chart(categories, counts, N, ylabel='Frequency', ytick_step=20,
     return fig, ax
 
 
+GREYS = ['#D3D3D3', '#808080', '#4D4D4D', '#BFBFBF']
+
+
+def grouped_bar_chart(group_labels, series, ylabel='Mean', errors=None,
+                      figsize=(6.5, 4.5), colors=None, value_fmt='{:.2f}'):
+    """Grouped bar chart in the same APA style.
+
+    group_labels : x-axis categories (e.g., conditions)
+    series       : list of (name, values) tuples, one per legend group
+    errors       : optional list of error arrays (same shape as series values)
+    Returns (fig, ax).
+    """
+    import numpy as np
+    apply_apa_style()
+    fig, ax = plt.subplots(figsize=figsize)
+    ng, n = len(series), len(group_labels)
+    x = np.arange(n)
+    bw = 0.7 / ng
+    cols = colors or GREYS[:ng]
+    ymax = 0
+    for j, (name, vals) in enumerate(series):
+        off = (j - (ng - 1) / 2) * bw
+        err = errors[j] if errors else None
+        bars = ax.bar(x + off, vals, bw * 0.95, label=name, color=cols[j],
+                      edgecolor=EDGE_COLOR, linewidth=0.8, zorder=3,
+                      yerr=err, capsize=3, error_kw=dict(lw=0.8))
+        for rect, v, i in zip(bars, vals, range(n)):
+            e = (err[i] if err is not None else 0)
+            ax.text(rect.get_x() + rect.get_width() / 2, rect.get_height() + e,
+                    value_fmt.format(v), ha='center', va='bottom', fontsize=8.5)
+            ymax = max(ymax, rect.get_height() + e)
+    ax.set_ylabel(ylabel, labelpad=8)
+    ax.set_xticks(x)
+    ax.set_xticklabels(group_labels)
+    ax.set_ylim(0, ymax * 1.18)
+    ax.tick_params(axis='both', length=4)
+    ax.legend(frameon=False, fontsize=9.5, loc='upper right')
+    fig.tight_layout()
+    return fig, ax
+
+
 def save(fig, path_stem):
     """Save a figure as PNG, PDF and SVG (300 dpi) at the given path stem."""
     for ext in ('png', 'pdf', 'svg'):
