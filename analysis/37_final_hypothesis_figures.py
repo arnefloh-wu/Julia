@@ -93,8 +93,9 @@ def ptxt(p):
     return 'p < .001' if p < .001 else f'p = {p:.3f}'
 
 
-# ───────────── H1: industry effect (within-subjects, paired) ─────────────
-t1, p1 = stats.ttest_rel(sv, bu)
+# ───────────── H1: industry effect (within-subjects, paired, one-tailed) ─────────────
+t1, p1two = stats.ttest_rel(sv, bu)
+p1 = p1two / 2 if t1 > 0 else 1 - p1two / 2   # directional: SiteVision > BalanceUp
 dz = (sv - bu).mean() / (sv - bu).std(ddof=1)
 two_bar(
     'fig_H1', 'H1: Investment by industry type',
@@ -102,7 +103,7 @@ two_bar(
     [sv.mean(), bu.mean()],
     [sv.std(ddof=1)/np.sqrt(len(sv)), bu.std(ddof=1)/np.sqrt(len(bu))],
     [len(sv), len(bu)], [DARK, GREY],
-    f'Paired t(186) = {t1:.2f},  {ptxt(p1)},  d$_z$ = {dz:.2f}', 3.0)
+    f'Paired t(186) = {t1:.2f},  {ptxt(p1)} (one-tailed),  d$_z$ = {dz:.2f}', 3.0)
 
 # ───────────── H2: masculine- vs feminine-congruent, full sample ─────────────
 masc_f = sv[g == 'male']; fem_f = bu[g == 'female']
